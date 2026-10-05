@@ -1,0 +1,18 @@
+# 대회 원본·가공 데이터는 외부 공유 금지 → 저장소에서 제외
+data/
+*.parquet
+*.zip
+
+# 비밀 키
+.env
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
