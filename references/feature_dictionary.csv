@@ -1,0 +1,80 @@
+﻿feature,group,description
+date,식별,날짜
+region,식별,지역
+industry_group,식별,업종대분류
+amount,목표,"일 매출(원, 신한카드 개인)"
+log_amt,목표,log(매출+1) — 모델 목표
+use_for_model,식별,학습 사용 여부 (lag14 존재)
+dow_num,달력,요일 0=월 ~ 6=일
+is_weekend,달력,주말
+is_holiday,달력,공휴일
+is_offday,달력,휴일(주말+공휴일)
+holiday_prev,달력,전날이 공휴일
+holiday_next,달력,다음날이 공휴일
+is_payday_week,달력,25일~말일
+week,달력,ISO 주 번호
+month,달력,월
+lag7,매출 수준,7일 전 log 매출
+lag14,매출 수준,14일 전 log 매출
+roll7,매출 수준,직전 7일 log 매출 평균
+roll7_offday_gap,매출 수준,직전 7일 휴일 − 평일 log 매출
+feels_like_max,기상,일최고 체감온도(℃)
+temp_min,기상,일최저기온(℃)
+wind_mean,기상,평균 풍속(m/s)
+rain_sum,기상,일강수량(mm)
+snow_new,기상,신적설(cm)
+heat_30_33,기상 파생,체감 30~33℃
+heat_33,기상 파생,체감 33℃ 이상
+heat_excess,기상 파생,체감 30℃ 초과분
+cold,기상 파생,최저 −12℃ 이하
+cold_excess,기상 파생,최저 −5℃ 미만분
+rain_light,기상 파생,강수 0~5mm
+rain_mid,기상 파생,강수 5~30mm
+rain_heavy,기상 파생,강수 30mm 이상
+log_rain,기상 파생,log(1+일강수량)
+snow,기상 파생,신적설 0.5cm 이상
+snow_cover,기상 파생,적설이 남은 날
+anom_feels_like,기상 파생,체감온도 평년 편차
+anom_temp_min,기상 파생,최저기온 평년 편차
+anom_rain,기상 파생,강수량 평년 편차
+rain_00_05,기상 파생,00~05시 강수(mm)
+rain_06_11,기상 파생,06~11시 강수
+rain_12_17,기상 파생,12~17시 강수
+rain_18_23,기상 파생,18~23시 강수
+rain_exposure,기상 파생,업종 시간대 매출비중 가중 강수(mm)
+log_rain_exposure,기상 파생,log(1+영업시간 강수 노출)
+rain_prev,기상 파생,전날 강수(mm)
+log_rain_prev,기상 파생,log(1+전날 강수)
+rain_streak,기상 파생,연속 강수일
+heat_streak,기상 파생,연속 폭염일
+weather_type,레이블,기상 유형
+heat_alert,레이블,폭염 특보 수준 0/1/2
+rain_alert,레이블,호우 특보 수준
+cold_alert,레이블,한파 특보 수준
+snow_alert,레이블,대설 특보 수준
+alert_level,레이블,특보 수준 최댓값
+outsider_share,구조,외지 고객 매출 비중
+indep_share,구조,독립점포 비중
+evening_share,구조,18~23시 매출 비중
+offday_ratio,구조,휴일/평일 매출
+is_chuncheon,인코딩,춘천=1
+region_code,인코딩,지역 정수 코드
+industry_code,인코딩,업종 정수 코드
+rain_x_chuncheon,상호작용,log_rain × 춘천
+rain_x_outsider,상호작용,log_rain × 외지 비중
+heat_x_chuncheon,상호작용,heat_33 × 춘천
+rain_heavy_x_offday,상호작용,rain_heavy × 휴일
+ind_간편식,인코딩,"업종 원-핫 (간편식, 기준=음식점)"
+ind_교육,인코딩,"업종 원-핫 (교육, 기준=음식점)"
+ind_교통·자동차,인코딩,"업종 원-핫 (교통·자동차, 기준=음식점)"
+ind_기타소매,인코딩,"업종 원-핫 (기타소매, 기준=음식점)"
+ind_대형유통,인코딩,"업종 원-핫 (대형유통, 기준=음식점)"
+ind_미용·개인서비스,인코딩,"업종 원-핫 (미용·개인서비스, 기준=음식점)"
+ind_숙박,인코딩,"업종 원-핫 (숙박, 기준=음식점)"
+ind_식료품소매,인코딩,"업종 원-핫 (식료품소매, 기준=음식점)"
+ind_여가·오락,인코딩,"업종 원-핫 (여가·오락, 기준=음식점)"
+ind_의료·보건,인코딩,"업종 원-핫 (의료·보건, 기준=음식점)"
+ind_의류·잡화,인코딩,"업종 원-핫 (의류·잡화, 기준=음식점)"
+ind_주점·유흥,인코딩,"업종 원-핫 (주점·유흥, 기준=음식점)"
+ind_카페·디저트,인코딩,"업종 원-핫 (카페·디저트, 기준=음식점)"
+ind_편의점,인코딩,"업종 원-핫 (편의점, 기준=음식점)"
