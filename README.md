@@ -9,8 +9,8 @@
 | 2. 기술통계 | `notebooks/02_descriptive_stats.ipynb` | `ana-stat` | 완료 |
 | 3. EDA | `notebooks/03_eda.ipynb` | `ana-eda` | 완료 |
 | 4. 데이터 엔지니어링 (필요 시) | `notebooks/04_feature_engineering.ipynb` | `ana-engin` | 완료 |
-| 5. 기후에 따른 피해 예측 | `notebooks/05_damage_prediction.ipynb` | `ana-pred` | |
-| 6. 피해 지원금 최적화 | `notebooks/06_support_optimization.ipynb` | `ana-opt` | |
+| 5. 기후에 따른 피해 예측 | `notebooks/05_damage_prediction.ipynb` | `ana-pred` | 완료 |
+| 6. 피해 지원금 최적화 | `notebooks/06_support_optimization.ipynb` | `ana-opt` | 완료 |
 | 7. 가설 설정 | `notebooks/07_hypotheses.ipynb` | | |
 
 ## 검증할 가설 (초안)
