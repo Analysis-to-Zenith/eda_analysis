@@ -11,7 +11,7 @@
 | 4. 데이터 엔지니어링 (필요 시) | `notebooks/04_feature_engineering.ipynb` | `ana-engin` | 완료 |
 | 5. 기후에 따른 피해 예측 | `notebooks/05_damage_prediction.ipynb` | `ana-pred` | 완료 |
 | 6. 피해 지원금 최적화 | `notebooks/06_support_optimization.ipynb` | `ana-opt` | 완료 |
-| 7. 가설 설정 | `notebooks/07_hypotheses.ipynb` | | |
+| 7. 가설 설정 | `notebooks/07_hypotheses.ipynb` | `ana-hypo` | 완료 |
 
 ## 검증할 가설 (초안)
 1. 같은 100만원 피해라도 월 매출 규모(100만·500만·1,000만원)에 따라 **실제 타격(피해율)은 다르다.**
